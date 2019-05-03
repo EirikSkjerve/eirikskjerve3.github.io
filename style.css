@@ -4,3 +4,111 @@ body{
 input[type=text]:focus{
     background-color: lightcoral;
 }
+            .kol-1{grid-column:span 1;}
+            .kol-2{grid-column:span 2;}
+            .kol-3{grid-column:span 3;}
+            .kol-4{grid-column:span 4;}
+            .kol-5{grid-column:span 5;}
+            .kol-6{grid-column:span 6;}
+            .kol-7{grid-column:span 7;}
+            .kol-8{grid-column:span 8;}
+            .kol-9{grid-column:span 9;}
+            .kol-10{grid-column:span 10;}
+            .kol-11{grid-column:span 11;}
+            .kol-12{grid-column:span 12;}
+            main{
+                max-width: 1000px;
+                display:grid;
+                margin: auto;
+                grid-template-columns: repeat(12,1fr);
+                grid-gap: 25px;
+                margin-top: 15px;
+            }
+header{
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 25px;
+    margin-top: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: #232323;
+    transition: 0.3s;
+    font-family: Arial, sans-serif;
+    
+    
+}
+a:hover{
+    color: lightgreen;
+}
+#menyklikk{
+    display: block;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+}
+#menyklikk>input{
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    
+    cursor: pointer;
+    filter: opacity(0);
+    z-index: 2;
+}
+#menyklikk>.burgermeny{
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    
+    background-color: navajowhite;
+    border-radius: 3px;
+    
+    z-index: 1;
+    transition: 1s ease-in-out;
+}
+#menyklikk input:checked~.burgermeny{
+    background-color: #232323;
+}
+#meny{
+    position: absolute;
+    width: 120px;
+    margin: -120px 0 0 -70px;
+    padding: 50px;
+    padding-top: 125px;
+    background-color: whitesmoke;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    
+    transition: 0.5s;
+}
+meny>li{
+    padding: 10px;
+    font-size: 22px;
+}
+li{
+    list-style: none; 
+    margin: 20px;
+}
+#menyklikk input:checked~ul{
+    transform: none;
+}
+@font-face{
+    font-family: neuropolx;
+    src: url("Fonts/neuropolx.ttf");
+}
+h1{
+    font-family: neuropolx;
+    color: #ededed;
+    font-size: 50px;
+    margin: auto;
+    
+}
