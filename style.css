@@ -1,3 +1,6 @@
 body{
     background-color: #232323;
 }
+input[type=text]:focus{
+    background-color: lightcoral;
+}
