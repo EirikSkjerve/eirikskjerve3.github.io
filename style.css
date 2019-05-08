@@ -6,7 +6,11 @@ body{
             .kol-3{grid-column:span 3;}
             .kol-4{grid-column:span 4;}
             .kol-5{grid-column:span 5;}
-            .kol-6{grid-column:span 6;}
+            .kol-6{grid-column:span 6;
+            background-color: #333333;
+            animation-name: fadeIn;
+            animation-duration: 2.5s;
+            box-shadow: 3px 3px 2px;}
             .kol-7{grid-column:span 7;}
             .kol-8{grid-column:span 8;}
             .kol-9{grid-column:span 9;}
@@ -67,7 +71,7 @@ a:hover{
     margin-bottom: 5px;
     position: relative;
     
-    background-color: navajowhite;
+    background-color: lightgreen;
     border-radius: 3px;
     
     z-index: 1;
@@ -117,7 +121,7 @@ h1{
 }
 @keyframes fadeIn{
     from{
-        transform: translateX(1300px);
+        transform: translateX(800px);
         opacity: 0;
     }
     to{
@@ -129,18 +133,18 @@ p{
     font-family: Arial, sans-serif;
     font-size: 20px;
     color: #ededed;
-    padding: 25px;
-    animation-name: fadeIn;
-    animation-duration: 2s;
-    animation-delay: 0.3s;
-}
-p:nth-last-child(1){
-    animation-delay: 0.6s;
+    padding: 45px;
+    
+    
 }
 input{
     background-color: #ededed;
     margin-right: 20px;
+    box-shadow: 4px 4px 2px;
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
 }
+
 .problem{
     width: 600px;
     height: 75px;
@@ -150,4 +154,11 @@ input{
 .status{
     width: 200px;
     margin-top: 30px;
+}
+button{
+    box-shadow: 4px 4px 2px;
+    animation: fadeIn 1.5s;
+}
+audio{
+    margin-left: 45px;
 }
