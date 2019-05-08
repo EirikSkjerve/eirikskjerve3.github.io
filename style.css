@@ -38,7 +38,7 @@ a{
     color: #232323;
     transition: 0.4s;
     font-family: Arial, sans-serif;
-    font-size: 20px
+    font-size: 20px;
     
     
 }
@@ -84,14 +84,14 @@ a:hover{
     position: absolute;
     width: 130px;
     box-shadow: 5px 5px 3px;
-    margin: -120px 0 0 -70px;
-    padding: 50px;
+    margin: -120px 0 0 -75px;
+    padding: 40px;
     padding-top: 125px;
     background-color: whitesmoke;
     transform-origin: 0% 0%;
-    transform: translate(-100%, 0);
+    transform: translate(0, -100%);
     
-    transition: 0.5s;
+    transition: 0.8s;
 }
 meny>li{
     padding: 10px;
@@ -121,7 +121,7 @@ h1{
 }
 @keyframes fadeIn{
     from{
-        transform: translateX(800px);
+        transform: translateX(700px);
         opacity: 0;
     }
     to{
