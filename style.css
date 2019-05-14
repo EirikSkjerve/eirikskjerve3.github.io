@@ -1,5 +1,7 @@
 body{
-    background-color: #232323;
+    background-image: url(background4.jpg);
+    background-size: cover;
+    
 }
             .kol-1{grid-column:span 1;}
             .kol-2{grid-column:span 2;}
@@ -34,6 +36,7 @@ header{
     position: sticky;
     top: 0;
     background-color: #404040;
+    opacity: 0.87;
 }
 
 a{
@@ -46,7 +49,7 @@ a{
     
 }
 a:hover{
-    color: #00ff00;
+    color: #5aaaf1;
     text-decoration: underline;
     
 }
@@ -76,7 +79,7 @@ a:hover{
     margin-bottom: 5px;
     position: relative;
     
-    background-color: lightgreen;
+    background-color: #5aaaf1;
     border-radius: 3px;
     
     z-index: 1;
@@ -85,14 +88,14 @@ a:hover{
 #menyklikk input:checked~.burgermeny{
     background-color: #232323;
     opacity: 1;
-    transform: rotate(45deg) translate(-2px, -1px);
+    transform: rotate(45deg) translate(0, 0);
 }
 #menyklikk input:checked~.burgermeny:nth-last-child(3){
     opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2);
 }
 #menyklikk input:checked~.burgermeny:nth-last-child(2){
-    transform: rotate(-45deg) translate(15px, -15px);
+    transform: rotate(-45deg) translate(13px, -13px);
 }
 #meny{
     position: absolute;
@@ -103,7 +106,7 @@ a:hover{
     padding-top: 125px;
     background-color: whitesmoke;
     transform-origin: 0% 0%;
-    transform: translate(-100%, 0);
+    transform: translate(0, -100%);
     
     transition: 0.8s;
 }
@@ -135,7 +138,7 @@ h3{
       font-family: neuropolx;
     color: #ededed;
     font-size: 15px;
-    margin: 30px;
+    margin-left: 30px;
     text-shadow: 2px 2px 2px black;
     animation-name: fadeIn;
     animation-duration: 1.3s;
@@ -196,8 +199,7 @@ audio{
     margin-bottom: 15px;
     padding: 5px;
     font-size: 10px;
-    bottom: -100000000px
-}
+    }
 #download{
     width: 20px;
     filter: brightness(3);
