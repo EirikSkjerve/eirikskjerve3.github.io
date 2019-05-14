@@ -80,15 +80,24 @@ a:hover{
     border-radius: 3px;
     
     z-index: 1;
-    transition: 1s ease-in-out;
+    transition: 0.7s ease-in-out;
 }
 #menyklikk input:checked~.burgermeny{
     background-color: #232323;
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+}
+#menyklikk input:checked~.burgermeny:nth-last-child(3){
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+#menyklikk input:checked~.burgermeny:nth-last-child(2){
+    transform: rotate(-45deg) translate(15px, -15px);
 }
 #meny{
     position: absolute;
     width: 130px;
-    box-shadow: 5px 5px 3px;
+    box-shadow: 3px 3px 3px;
     margin: -120px 0 0 -75px;
     padding: 40px;
     padding-top: 125px;
@@ -121,8 +130,15 @@ h1{
     text-shadow: 2px 2px 2px black;
     animation-name: fadeIn;
     animation-duration: 1.3s;
-    
-    
+}
+h3{
+      font-family: neuropolx;
+    color: #ededed;
+    font-size: 15px;
+    margin: 30px;
+    text-shadow: 2px 2px 2px black;
+    animation-name: fadeIn;
+    animation-duration: 1.3s;
 }
 @keyframes fadeIn{
     from{
@@ -140,6 +156,7 @@ p{
     color: #ededed;
     padding: 5px;
     border: 3px solid #333333;
+    margin-left: 15px;
     
     
 }
@@ -169,5 +186,19 @@ audio{
     margin-left: 45px;
 }
 #hacker{
-    width: 570px
+    width: 500px;
+    animation-name: fadeIn;
+    animation-duration: 1.2s;
+}
+#Prosjekt{
+    color: #ededed;
+    margin-left: 18px;
+    margin-bottom: 15px;
+    padding: 5px;
+    font-size: 10px;
+    bottom: -100000000px
+}
+#download{
+    width: 20px;
+    filter: brightness(3);
 }
