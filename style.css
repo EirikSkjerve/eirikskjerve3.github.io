@@ -45,13 +45,10 @@ a{
     transition: 0.5s;
     font-family: Arial, sans-serif;
     font-size: 20px;
-    
-    
 }
 a:hover{
-    color: #5aaaf1;
+    color: lightgreen;
     text-decoration: underline;
-    
 }
 #menyklikk{
     display: block;
@@ -79,7 +76,7 @@ a:hover{
     margin-bottom: 5px;
     position: relative;
     
-    background-color: #5aaaf1;
+    background-color: lightgreen;
     border-radius: 3px;
     
     z-index: 1;
@@ -189,9 +186,9 @@ audio{
     margin-left: 45px;
 }
 #hacker{
-    width: 500px;
-    animation-name: fadeIn;
-    animation-duration: 1.2s;
+    width: 567px;
+    padding: 10px;
+   
 }
 #Prosjekt{
     color: #ededed;
@@ -203,4 +200,14 @@ audio{
 #download{
     width: 20px;
     filter: brightness(3);
+}
+#henvendelse{
+    width: 567px;
+    padding: 10px;
+}
+#audio{
+    margin-top: 40px;
+    max-width: 300px;
+    max-height: 20px;
+    animation: fadeIn 1.2s;
 }
