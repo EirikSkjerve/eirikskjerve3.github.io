@@ -1,24 +1,27 @@
 body{
-    background-image: url(background4.jpg);
+    background-image: url(background2.jpg);
     background-size: cover;
-    
+    transition: 1s;
 }
+
             .kol-1{grid-column:span 1;}
             .kol-2{grid-column:span 2;}
             .kol-3{grid-column:span 3;}
             .kol-4{grid-column:span 4;}
             .kol-5{grid-column:span 5;}
             .kol-6{grid-column:span 6;
-            background-color: #333333;
+            background-image: url(background4.jpg);
+            background-size: cover;
             animation-name: fadeIn;
             animation-duration: 1.2s;
-            box-shadow: 3px 3px 2px;}
+            box-shadow: 2px 2px 2px;}
             .kol-7{grid-column:span 7;}
             .kol-8{grid-column:span 8;}
             .kol-9{grid-column:span 9;}
             .kol-10{grid-column:span 10;}
             .kol-11{grid-column:span 11;}
             .kol-12{grid-column:span 12;}
+
             main{
                 max-width: 1200px;
                 display: grid;
@@ -26,7 +29,9 @@ body{
                 grid-template-columns: repeat(12,1fr);
                 grid-gap: 25px;
                 margin-top: 15px;
+                
             }
+
 header{
     display: grid;
     margin: auto;
@@ -35,8 +40,10 @@ header{
     margin-top: 15px;
     position: sticky;
     top: 0;
-    background-color: #404040;
+    background-image: url(background1.jpg);
+    background-size: cover; 
     opacity: 0.87;
+    box-shadow: 2px 2px 2px black;
 }
 
 a{
@@ -155,7 +162,6 @@ p{
     font-size: 20px;
     color: #ededed;
     padding: 5px;
-    border: 3px solid #333333;
     margin-left: 15px;
     
     
@@ -227,10 +233,21 @@ audio{
     width: 60px;
     transform: scale(1) rotate(0deg);
     transition: 1.5s ease-in-out;
-    margin-top: 35px;
+    margin-top: 0px;
 }
 #nettglobe:hover{
     transform: scale(2.1) rotate(360deg);
+    filter: brightness(0);
+    
+}
+#nettglobe1{
+    width: 60px;
+    transform: scale(1) rotate(0deg);
+    transition: 1.5s ease-in-out;
+    margin-top: 35px;
+}
+#nettglobe1:hover{
+    transform: scale(1.9) rotate(360deg);
     filter: brightness(0);
     
 }
