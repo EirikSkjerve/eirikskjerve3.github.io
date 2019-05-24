@@ -14,7 +14,9 @@ body{
             background-size: cover;
             animation-name: fadeIn;
             animation-duration: 1.2s;
-            box-shadow: 2px 2px 2px;}
+            box-shadow: 2px 2px 2px;
+
+}
             .kol-7{grid-column:span 7;}
             .kol-8{grid-column:span 8;}
             .kol-9{grid-column:span 9;}
@@ -228,6 +230,8 @@ audio{
     margin-top: 10px;
     margin-left: 130px;
     box-shadow: 3px 3px 3px black;
+    align-content: center;
+   
 }
 #nettglobe{
     width: 60px;
@@ -236,7 +240,7 @@ audio{
     margin-top: 0px;
 }
 #nettglobe:hover{
-    transform: scale(2.1) rotate(360deg);
+    transform: scale(2.0) rotate(360deg);
     filter: brightness(0);
     
 }
@@ -247,7 +251,7 @@ audio{
     margin-top: 35px;
 }
 #nettglobe1:hover{
-    transform: scale(1.9) rotate(360deg);
+    transform: scale(2.1) rotate(360deg);
     filter: brightness(0);
     
 }
