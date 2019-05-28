@@ -13,10 +13,9 @@ body{
             background-image: url(background4.jpg);
             background-size: cover;
             animation-name: fadeIn;
-            animation-duration: 1.2s;
-            box-shadow: 2px 2px 2px;
-
-}
+            animation-duration: 1.7s;
+            animation-timing-function: ease-in-out;
+            box-shadow: 2px 2px 2px;}
             .kol-7{grid-column:span 7;}
             .kol-8{grid-column:span 8;}
             .kol-9{grid-column:span 9;}
@@ -57,7 +56,7 @@ a{
 }
 a{
     
-    transition: 0.5s ease;
+    transition: 0.4s ease;
     text-decoration: underline transparent;
 }
 a:hover{
@@ -143,7 +142,8 @@ h1{
     margin: 30px;
     text-shadow: 2px 2px 2px black;
     animation-name: fadeIn;
-    animation-duration: 1.2s;
+    animation-duration: 1.7s;
+    animation-timing-function: ease-in-out;
 }
 h3{
       font-family: neuropolx;
@@ -152,11 +152,12 @@ h3{
     margin-left: 30px;
     text-shadow: 2px 2px 2px black;
     animation-name: fadeIn;
-    animation-duration: 1.2s;
+    animation-duration: 1.7s;
+    animation-timing-function: ease-in-out;
 }
 @keyframes fadeIn{
     from{
-        transform: translateX(700px);
+        transform: translateX(1000px);
         opacity: 0;
     }
     to{
@@ -178,7 +179,8 @@ input{
     margin-right: 20px;
     box-shadow: 4px 4px 2px;
     animation-name: fadeIn;
-    animation-duration: 1.2s;
+    animation-duration: 1.7s;
+    animation-timing-function: ease-in-out;
 }
 
 .problem{
@@ -193,7 +195,8 @@ input{
 }
 button{
     box-shadow: 4px 4px 2px;
-    animation: fadeIn 1.2s;
+    animation: fadeIn 1.7s;
+    animation-timing-function: ease-in-out;
 }
 audio{
     margin-left: 45px;
@@ -222,7 +225,8 @@ audio{
     margin-top: 40px;
     max-width: 300px;
     max-height: 20px;
-    animation: fadeIn 1.2s;
+    animation: fadeIn 1.7s;
+    animation-timing-function: ease-in-out;
 }
 #risiko{
     width: 300px;
@@ -237,28 +241,6 @@ audio{
     box-shadow: 3px 3px 3px black;
     align-content: center;
    
-}
-#nettglobe{
-    width: 60px;
-    transform: scale(1) rotate(0deg);
-    transition: 1.5s ease-in-out;
-    margin-top: 0px;
-}
-#nettglobe:hover{
-    transform: scale(2.0) rotate(360deg);
-    filter: brightness(0);
-    
-}
-#nettglobe1{
-    width: 60px;
-    transform: scale(1) rotate(0deg);
-    transition: 1.5s ease-in-out;
-    margin-top: 35px;
-}
-#nettglobe1:hover{
-    transform: scale(2.1) rotate(360deg);
-    filter: brightness(0);
-    
 }
 @keyframes spinn{
     from{
