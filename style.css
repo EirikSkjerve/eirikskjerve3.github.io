@@ -247,18 +247,20 @@ audio{
         transform: rotate(0deg) translateY(-40px);
         opacity: 0.8;
         filter: blur(0px);
+        background-color: lightgreen;
     }
     to{
         transform: rotate(1turn) translateY(-40px);
         opacity: 0.7;
         filter: blur(1px);
+        background-color: red;
     }
 }
 .spinn{
     width: 120px;
     height: 120px;
     position: relative;
-        
+    animation: fadeIn 1.7s;
 }
 .spinn>div{
     position: absolute;
@@ -266,31 +268,29 @@ audio{
     left: 40px;
     width: 15px;
     height: 9px;
-    background-color: lightgreen;
     transform-origin: center bottom;
     transform: rotate(0) translateY(-40px);
     animation-name: spinn;
     animation-duration: 4s;
-    animation-timing-function: linear;
+    animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
     border-radius: 50%;
     box-shadow: 4px 4px 4px;
     filter: blur(1px);
-}
-            .spinn>div:nth-child(1){animation-delay: 0s; }
-            .spinn>div:nth-child(2){animation-delay: 0.4s; }
+    
+} 
+.spinn>div:nth-child(1){animation-delay: 0.4s; }
+            .spinn>div:nth-child(2){animation-delay: 0.6s;}
             .spinn>div:nth-child(3){animation-delay: 0.8s;}
-            .spinn>div:nth-child(4){animation-delay: 1.2s;}
-            .spinn>div:nth-child(5){animation-delay: 1.6s;}
-            .spinn>div:nth-child(6){animation-delay: 2s;}
-            .spinn>div:nth-child(7){animation-delay: 2.4s;}
-            .spinn>div:nth-child(8){animation-delay: 2.8s;}
-            .spinn>div:nth-child(9){animation-delay: 3.2s;}
-            .spinn>div:nth-child(10){animation-delay:3.6s;}
+            .spinn>div:nth-child(4){animation-delay: 1s;}
+            .spinn>div:nth-child(5){animation-delay: 1.2s;}
+            
 .spinn2{
     width: 120px;
     height: 120px;
     position: relative;
+    animation: fadeIn 1.7s;
         
 }
 .spinn2>div{
@@ -299,32 +299,28 @@ audio{
     left: 40px;
     width: 15px;
     height: 9px;
-    background-color: cadetblue;
     transform-origin: center bottom;
     transform: rotate(0) translateY(-40px);
     animation-name: spinn;
     animation-duration: 4s;
-    animation-timing-function: linear;
+    animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
     border-radius: 50%;
     box-shadow: 4px 4px 4px;
     filter: blur(1px);
 }
-            .spinn2>div:nth-child(1){animation-delay: 0s; }
-            .spinn2>div:nth-child(2){animation-delay: 0.4s; }
+          .spinn2>div:nth-child(1){animation-delay: 0.4s; }
+            .spinn2>div:nth-child(2){animation-delay: 0.6s;}
             .spinn2>div:nth-child(3){animation-delay: 0.8s;}
-            .spinn2>div:nth-child(4){animation-delay: 1.2s;}
-            .spinn2>div:nth-child(5){animation-delay: 1.6s;}
-            .spinn2>div:nth-child(6){animation-delay: 2s;}
-            .spinn2>div:nth-child(7){animation-delay: 2.4s;}
-            .spinn2>div:nth-child(8){animation-delay: 2.8s;}
-            .spinn2>div:nth-child(9){animation-delay: 3.2s;}
-            .spinn2>div:nth-child(10){animation-delay:3.6s;}    
+            .spinn2>div:nth-child(4){animation-delay: 1s;}
+            .spinn2>div:nth-child(5){animation-delay: 1.2s;}
   
 .spinn3{
     width: 120px;
     height: 120px;
     position: relative;
+    animation: fadeIn 1.7s;
         
 }
 .spinn3>div{
@@ -333,31 +329,27 @@ audio{
     left: 40px;
     width: 15px;
     height: 9px;
-    background-color: indianred;
     transform-origin: center bottom;
     transform: rotate(0) translateY(-40px);
     animation-name: spinn;
     animation-duration: 4s;
-    animation-timing-function: linear;
+    animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
     border-radius: 50%;
     box-shadow: 4px 4px 4px;
     filter: blur(1px);
 }
-            .spinn3>div:nth-child(1){animation-delay: 0s; }
-            .spinn3>div:nth-child(2){animation-delay: 0.4s; }
+         .spinn3>div:nth-child(1){animation-delay: 0.4s; }
+            .spinn3>div:nth-child(2){animation-delay: 0.6s;}
             .spinn3>div:nth-child(3){animation-delay: 0.8s;}
-            .spinn3>div:nth-child(4){animation-delay: 1.2s;}
-            .spinn3>div:nth-child(5){animation-delay: 1.6s;}
-            .spinn3>div:nth-child(6){animation-delay: 2s;}
-            .spinn3>div:nth-child(7){animation-delay: 2.4s;}
-            .spinn3>div:nth-child(8){animation-delay: 2.8s;}
-            .spinn3>div:nth-child(9){animation-delay: 3.2s;}
-            .spinn3>div:nth-child(10){animation-delay:3.6s;}    
+            .spinn3>div:nth-child(4){animation-delay: 1s;}
+            .spinn3>div:nth-child(5){animation-delay: 1.2s;}  
 .spinn4{
     width: 120px;
     height: 120px;
     position: relative;
+    animation: fadeIn 1.7s;
         
 }
 .spinn4>div{
@@ -366,24 +358,19 @@ audio{
     left: 40px;
     width: 15px;
     height: 9px;
-    background-color: lightyellow;
     transform-origin: center bottom;
     transform: rotate(0) translateY(-40px);
     animation-name: spinn;
     animation-duration: 4s;
-    animation-timing-function: linear;
+    animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
     border-radius: 50%;
     box-shadow: 4px 4px 4px;
     filter: blur(1px);
 }
-            .spinn4>div:nth-child(1){animation-delay: 0s; }
-            .spinn4>div:nth-child(2){animation-delay: 0.4s; }
+            .spinn4>div:nth-child(1){animation-delay: 0.4s; }
+            .spinn4>div:nth-child(2){animation-delay: 0.6s;}
             .spinn4>div:nth-child(3){animation-delay: 0.8s;}
-            .spinn4>div:nth-child(4){animation-delay: 1.2s;}
-            .spinn4>div:nth-child(5){animation-delay: 1.6s;}
-            .spinn4>div:nth-child(6){animation-delay: 2s;}
-            .spinn4>div:nth-child(7){animation-delay: 2.4s;}
-            .spinn4>div:nth-child(8){animation-delay: 2.8s;}
-            .spinn4>div:nth-child(9){animation-delay: 3.2s;}
-            .spinn4>div:nth-child(10){animation-delay:3.6s;}  
+            .spinn4>div:nth-child(4){animation-delay: 1s;}
+            .spinn4>div:nth-child(5){animation-delay: 1.2s;}
